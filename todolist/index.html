@@ -6,12 +6,152 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>fichier test git</title>
+    <script>
+        * {
+            margin: 0;
+            padding: 0;
+            box - sizing: border - box;
+            font - family: sans - serif;
+        }
+
+        .print - area {
+            width: 80 % ;
+            margin: 20 px auto;
+        }
+
+        .print - area.head {
+            width: 100 % ;
+            height: 150 % ;
+            background - color: rgb(31, 34, 43);
+            display: flex;
+            align - items: center;
+            position: relative;
+        }
+
+        .head img {
+            width: 200 px;
+            height: 200 px;
+            border - radius: 60 % ;
+            position: absolute;
+            top: 30 px;
+            left: 50 px;
+            border: 10 px solid white;
+            box - shadow: 3 px,
+            3 px,
+            10 px,
+            rgba(0, 0, 0, -5);
+            cursor: pointer;
+            transition: -5 s;
+            user - select: none;
+            filter: grayscale(100 % );
+        }
+
+        .head img: hover {
+            filter: grayscale(0 % );
+            transform: scale(1.05);
+            box - shadow: 3 px,
+            3 px,
+            10 px,
+            rgba(0, 0, 0, -5);
+        }
+
+        .nom {
+            color: white;
+            width: 260 px;
+            margin - left: auto;
+        }
+
+        .nom h1 {
+            font - size: 50 px;
+            font - weight: auto;
+        }
+
+        .nom p {
+            font - size: 20 px;
+            color: lightgray;
+        }
+
+        .content {
+            display: flex;
+            flex - wrap: wrap;
+            /*de descendre en bas*/
+        }
+
+        .left - area {
+            width: 20 % ;
+            background - color: lightgray;
+        }
+
+        .left - area.contact {
+            margin - top: 100 px;
+        }
+
+        .right - area {
+            width: 70 % ;
+        }
+    </script>
 </head>
 
 <body>
-    <P>HELLO WORLD</P>
-    <p>je suis moi</p>
-
+    <div class="print-area">
+        <div class="head">
+            <img src="../SGS.jpg" alt="SGS">
+            <div class="nom">
+                <h1>Salissou Garba Sani</h1>
+                <p>Programmeur et Maintenancier en Informatique</p>
+            </div>
+        </div>
+        <div class="content">
+            <div class="left-area">
+                <h1>left</h1>
+                <div class="contact">
+                    <h4>contact</h4>
+                    <h5>telephone</h5>
+                    <p>+22797818170</p>
+                    <h5>Email</h5>
+                    <p>salissougarbasani@gmail.com</p>
+                </div>
+                <div class="skill">
+                    <h1>skill</h1>
+                    <div class="bars">
+                        <div class="bar">
+                            <p>HTML/CSS</p>
+                            <span></span>
+                        </div>
+                        <div class="bar">
+                            <p>Javascript</p>
+                            <span></span>
+                        </div>
+                        <div class="bar">
+                            <p>PHP</p>
+                            <span></span>
+                        </div>
+                        <div class="bar">
+                            <p>MySQL</p>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="follow">
+                    <h1>vous pouvez me suivre sur:</h1>
+                    <h4>Facebook</h4>
+                    <p>facebook.com/username</p>
+                    <h4>Instagram</h4>
+                    <p>instagram.com/username</p>
+                    <h4>Twitter</h4>
+                    <p>twitter.com/username</p>
+                    <h4>Youtube</h4>
+                    <p>Youtube.com/username</p>
+                </div>
+            </div>
+            <div class="right-area">
+                <h1>right</h1>
+                <div class="about">
+                    <h1><span><i class="far fa-user"></i></span></h1>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
